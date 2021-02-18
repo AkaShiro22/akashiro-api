@@ -1,8 +1,8 @@
 # AkaShiro-Api
-Access ArugaZ Rest Api Programmatically
+Access AkaShiro Rest Api Programmatically
 
 ### Main website 
-[arugaz.my.id](https://arugaz.my.id)
+[akashiro.my.id](https://akashiro.my.id)
 
 #### If you have any suggestions of a website, open an issue!
 
@@ -10,13 +10,13 @@ Access ArugaZ Rest Api Programmatically
 
 Via NPM:
 ```bash
-$ npm install @akashiro22/akashiro-api
+$ npm install @akashiro/akashiro-api
 ```
 
 ## Simple to Use
 
 ```js
-const arugaz = require('@akashiro22/akashiro-api');
+const arugaz = require('@akashiro/akashiro-api');
 
 /*
 arugaz.type.module-name(params)
