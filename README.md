@@ -10,13 +10,13 @@ Access AkaShiro Rest Api Programmatically
 
 Via NPM:
 ```bash
-$ npm install @arugaz/arugaz-api
+$ npm install @AkaShiro22/akashiro-api
 ```
 
 ## Simple to Use
 
 ```js
-const arugaz = require('@arugaz/arugaz-api');
+const arugaz = require('@AkaShiro22/akashiro-api');
 
 /*
 arugaz.type.module-name(params)
