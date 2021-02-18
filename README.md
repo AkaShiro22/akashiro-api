@@ -1,4 +1,4 @@
-# ArugaZ-Api
+# AkaShiro-Api
 Access ArugaZ Rest Api Programmatically
 
 ### Main website 
