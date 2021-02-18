@@ -1,5 +1,5 @@
 {
-  "name": "@arugaz/arugaz-api",
+  "name": "@akashiro/akashiro-api",
   "version": "1.0.10",
   "description": "Access ArugaZ Rest Api Programmatically",
   "main": "src/index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ArugaZ/arugaz-api.git"
+    "url": "git+https://github.com/AkaShiro22/akashiro-api.git"
   },
   "keywords": [
     "nodejs",
@@ -17,12 +17,12 @@
     "arugaz",
     "scraper"
   ],
-  "author": "ArugaZ // arugaastri@gmail.com",
+  "author": "AkaShiro // akashiro22abcd@gmail.com",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/ArugaZ/arugaz-api/issues"
+    "url": "https://github.com/AkaShiro22/akashiro-api/issues"
   },
-  "homepage": "https://github.com/ArugaZ/arugaz-api#readme",
+  "homepage": "https://github.com/AkaShiro22/akashiro-api#readme",
   "dependencies": {
     "bent": "^7.3.12",
     "jsdom": "^16.4.0",
