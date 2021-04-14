@@ -91,4 +91,4 @@ axios.get('https://raw.githubusercontent.com/akashiro22/akashiro-api/main/contoh
 #### Instagram : [`@h4cking3mpir3S`](https://www.instagram.com/h4cking3mpir3S)
 #### Kontak : [`WhatsApp`](https://wa.me/62859106999930)
 #### Donasi : [`Seikhlasnya :)`](https://saweria.co/akashiro)
-#### Creator : [`RC047`](https://Github.com/akashiro22)
+#### Creator : [`akashiro22`](https://Github.com/akashiro22)
