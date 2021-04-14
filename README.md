@@ -1,177 +1,94 @@
-# AkaShiro-Api
-Access AkaShiro Rest Api Programmatically
+# Selamat Datang Di Rest Api Github! <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Hi.gif" width="50px">
+<img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Developer.gif" width="500px">
 
-### Main website 
-[xxx.my.id](https://xxx.my.id)
+## Apikey? Chat Admin <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/happy.gif" width="30px">
+[`Kontak Saya`](https://wa.me/62895337278647?text=Bang%20Minta%20Apikey%20Kuhong-Api%20)
+Apikeynya Gratis kok gan,, tenang aja ;D
 
-#### If you have any suggestions of a website, open an issue!
+## Contoh Kode <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Medal.gif" width="30px">
 
-## Installation
-
-Via NPM:
+### Untuk Teks (Non-Media)
 ```bash
-$ npm install @AkaShiro22/akashiro-api
+$ npm install axios
 ```
-
-## Simple to Use
-
 ```js
-const arugaz = require('@AkaShiro22/akashiro-api');
+const axios = require('axios') // Module yg dibutuhkan untuk menscrap website
 
-/*
-arugaz.type.module-name(params)
-.then(res => console.log(res))
-.catch(err => console.log(err))
-*/
+axios.get('https://raw.githubusercontent.com/akashiro22/akashiro-api/main/contoh.json').then((res) => { // Scrap web
+ let random = Math.floor(Math.random() * res.data.length) // Acak objek
+ let data = res.data[random] // Setelah diacak arahkan ke teks respon sesuai nama diweb
+   console.log(data.result) // Ta Daa
+})
+
+
+
+// Note : Link harus teks raw (https://raw.githubusercontent.com)
 ```
-
-### Social Media
-
+### Untuk Gambar/Video (Media)
+```bash
+$ npm install axios
+$ npm install image-to-base64
+```
 ```js
-//Example!
-arugaz.sosmed.ytsearch('alan walker')
-.then(res => console.log(res))
-.catch(err => console.log(err))
+const imageToBase64 = require('image-to-base64') // Untuk mengubah menjadi gambar
+const axios = require('axios') // Module yg dibutuhkan untuk menscrap website
 
-arugaz.sosmed.xnxxdetail('https://www.xnxx.com/video-hw4efca/japanese_mom_f._son_to_have_sex_with_her')
-.then(res => console.log(res))
-.catch(err => console.log(err))
+axios.get('https://raw.githubusercontent.com/akashiro22/akashiro-api/main/contoh_gambar.json').then((res) => { // Scrap web
+ let random = Math.floor(Math.random() * res.data.length) // Acak objek
+ let data = res.data[random] // Setelah diacak arahkan ke teks respon sesuai nama diweb
+  imageToBase64(data.gambar).then((result) => { // Ubah menjadi gambar
+   let hasil = Buffer.from(result, 'base64') // Konversi teks base64 ke gambar/video
+     console.log(hasil) // Ta Daa
+   })
+})
+
+// Note : Respon akan berupa teks buffer,, gunakan alat seperti media sender agar merespon menjadi media gambar/video
 ```
 
-<details>
-  <summary><b>Lists of module name (type = sosmed)</b> (click to show)</summary>
+## Dokumentasi <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/coin.gif" width="25px">
 
-| module name | params | thing | response | description |
-| :--- | :---------- | :--- | :--- | :--- |
-| ytsearch | query | youtube title | json | Youtube Search |
-| ytaudio | url | youtube url | json | Get Youtube Audio |
-| ytvideo | url | youtube url | json | Youtube Video |
-| instagram | url | instagram url | json | Instagram Post |
-| stalkig | query | instagram username | json | Instagram Profile |
-| storyig | query | instagram username | json | Instagram Story |
-| highlightig | query | instagram username | json | Instagram Highlight |
-| tiktok | url | tiktok url | json | Tiktok Download No WM |
-| twtimg | url | twitter url | json | Twitter Image |
-| twtvid | url | twitter url | json | Twitter Video |
-| stalktwt | query | twitter username | json | Twitter Profile |
-| facebook | url | facebook url | json | Facebook Video |
-| phubsearch | query | pornhub title | json | Pornhub Search |
-| phubdetail | url | pornhub url | json | Pornhub Detail |
-| xvidsearch | query | xvideo title | json | XVideo Search |
-| xviddetail | url | xvideo url | json | XVideo Detail |
-| xnxxsearch | query | xnxx title | json | Xnxx Search |
-| xnxxdetail | url | xnxx url | json | Xnxx Detail |
-| filmsearch | query | filmapik title | json | Movie Search |
-| filmdetail | url | filmapik url | json | Movie Detail |
+| Nomor | Nama | Deskripsi | Status | Link |
+| :-: | :-----------------: | :-----------------: | :-------: | :-------: |
+| 1 | Test API Teks | Pratinjau Contoh Respon API Teks | - | [`Klik Disini`](https://raw.githubusercontent.com/akashiro22/akashiro-api/main/contoh.json)|
+| 2 | Test API Media | Pratinjau Contoh Respon API Media | - | [`Klik Disini`](https://raw.githubusercontent.com/akashiro22/akashiro-api/main/contoh_gambar.json)|
+| 3 | Anime | Mengirimkan Gambar Anime | Aktif  | [`Klik Disini`](https://tinyurl.com/4pk8n3ka)|
+| 4 | Asupan | Megirimkan Video Penyegar Timeline | Aktif | [`Klik Disini`](https://tinyurl.com/uzmk2ytz)|
+| 5 | Berita | Mengirimkan Informasi Berita Terkini | Aktif | [`Klik Disini`](https://tinyurl.com/3rxhkzve)|
+| 6 | BTS | Mengirimkan Gambar BTS | Aktif | [`Klik Disini`](https://tinyurl.com/uyd3kw74)|
+| 7 | Black Pink | Mengirimkan Gambar BlackPink | Aktif | [`Klik Disini`](https://tinyurl.com/2mz7s5p7)|
+| 8 | Bokep | Mengirimkan Gambar 18+ | Aktif | [`Klik Disini`](https://tinyurl.com/p8xf5e6s)|
+| 9 | Bucin | Mengirimkan Kata Bucin | Aktif | [`Klik Disini`](https://tinyurl.com/2mz7s5p7)|
+| 10 | Cak Lontong | Mengirimkan Soal Cak Lontong | Aktif | [`Klik Disini`](https://tinyurl.com/9u6vmeyw)|
+| 11 | Cantik Cek | Menentukan Seberapa Cantiknya Anda | Aktif | [`Klik Disini`](https://tinyurl.com/bp6rmrjm)|
+| 12 | Cecan | Mengirimkan Gambar Cewek Cantik | Aktif | [`Klik Disini`](https://tinyurl.com/y6cd972d)|
+| 13 | Cogan | Mengirimkan Gambar Cowok Ganteng | Aktif | [`Klik Disini`](https://tinyurl.com/55zkyvsw)|
+| 14 | Dadu | Permainan Dadu | Aktif | [`Klik Disini`](https://tinyurl.com/RC047)|
+| 15 | Dadu Gambar | Permainan Dadu Versi Gambar | Aktif | [`Klik Disini`](https://tinyurl.com/35m7xnac)|
+| 16 | Dark Jokes | Mengirimkan Gambar Meme Gelap | Aktif | [`Klik Disini`](https://tinyurl.com/h3htsafa)|
+| 17 | EXO | Mengirimkan Gambar EXO | Aktif | [`Klik Disini`](https://tinyurl.com/nufwzm5u)|
+| 18 | Family 100 | Mengirimkan Soal Family 100 | Aktif | [`Klik Disini`](https://tinyurl.com/2sz8umxa)|
+| 19 | Ganteng Cek | Menentukan Seberapa Gantengnya Anda | Aktif | [`Klik Disini`](https://tinyurl.com/ysnm3knb)|
+| 20 | Gay Cek | Menentukan Seberapa Gaynya Anda | Aktif | [`Klik Disini`](https://tinyurl.com/k4cu97p9)|
+| 21 | Gombal | Mengirimkan Kata Gombalan | Aktif | [`Klik Disini`](https://tinyurl.com/rn5saa75)|
+| 22 | IQ Test | Menentukan Seberapa Pintarnya Anda | Aktif | [`Klik Disini`](https://tinyurl.com/r6ufaue6)|
+| 23 | Meme Indo | Mengirimkan Gambar Meme Indonesia | Aktif | [`Klik Disini`](https://tinyurl.com/nbctte33)|
+| 24 |Pantun | Mengirimkan Kata Pantun | Aktif | [`Klik Disini`](https://tinyurl.com/2j2r5jwx)|
+| 25 | Puisi | Mengirimkan Kata Puisi | Aktif | [`Klik Disini`](https://tinyurl.com/5ay36eyw)|
+| 26 | Quotes | Mengirimkan Kata Quotes | Aktif | [`Klik Disini`](https://tinyurl.com/3xkmt3bw)|
+| 27 | Simsimi | Simsimi Menemani Anda Mengobrol | Aktif | [`Klik Disini`](https://tinyurl.com/5bmsrzna)|
+| 28 | Syair | Mengirimkan Kata Syair | Aktif | [`Klik Disini`](https://tinyurl.com/y8z932xm)|
+| 29 | Tebak Gambar | Mengirimkan Soal Tebak Gambar | Aktif | [`Klik Disini`](https://tinyurl.com/vew8855a)|
+| 30 | Tolol Cek | Menentukan Seberapa Tololnya Anda | Aktif | [`Klik Disini`](https://tinyurl.com/28evtju2)|
 
-</details>
 
-### Text Pro
 
-```js
-//Example!
-arugaz.textpro.glue3d('hello world')
-.then(res => console.log(res))
-.catch(err => console.log(err))
 
-arugaz.textpro.space3d('hello', 'world')
-.then(res => console.log(res))
-.catch(err => console.log(err))
-```
 
-<details>
-  <summary><b>Lists of module name (type = textpro)</b> (click to show)</summary>
 
-| module name | params | thing | response | description |
-| :--- | :---------- | :--- | :--- | :--- |
-| luxury | query | any text | buffer | 3D luxury gold text effect |
-| text3d | query | any text | buffer | 3D gradient text effect |
-| blackpink | query | any text | buffer | Blackpink logo style |
-| realvintage | query | any text | buffer | realistic vintage style light bulb |
-| realcloud | query | any text | buffer | realistic cloud text effect |
-| sandsummer| query | any text | buffer | write in sand summer beach |
-| sandwrite | query | any text | buffer | sand writing |
-| sandengraved | query | any text | buffer | sand engraved 3d |
-| sandsummery | query | any text | buffer | summery sand writing |
-| foilballoon | query | any text | buffer | foil balloon text effect |
-| glue3d | query | any text | buffer | 3D glue effect |
-| space3d | query, query | any text, any text | buffer | space 3D text effect |
-| metaldark | query | any text | buffer | Metal dark gold effect |
-| glitchtext | query, query | any text, any text | buffer | Glitch text effect tiktok |
-| stonetext | query, query | any text, any text | buffer | Stone text effect |
-| neonlight | query | any text | buffer | Neon light with galaxy |
-| neonnew | query | any text | buffer | Neon light Effect |
-| old1917 | query | any text | buffer | 1917 Old Text effect |
-| minion | query | any text | buffer | Minion text effect |
-| pornhub | query, query | any text, any text | buffer | Pornhub style logo |
-| holograpich | query | any text | buffer | Holograpich 3D effect |
-| avengers | query, query | any text, any text | buffer | 3D Avengers Logo |
-| marvel | query, query | any text, any text | buffer | Marvel studio logo |
-| firework | query | any text | buffer | Firework sparkle effect |
-| lavatext | query | any text | buffer | Lava text effect |
-| america | query | any text | buffer | Captain America style |
-| equalizer | query | any text | buffer | Rainbow equalizer effect |
-| toxic | query | any text | buffer | Green Toxic Text |
-| matrix | query | any text | buffer | Matrix Text Effect |
-| blood | query | any text | buffer | Horror blood effect |
-| thunder | query | any text | buffer | Thunder text effect |
-| neon | query | any text | buffer | Neon text effect |
-| bokeh | query | any text | buffer | Bokeh text effect |
-| green | query | any text | buffer | Green neon style |
-| glow | query | any text | buffer | Glowing text |
-| water | query | any text | buffer | Dropwater text effect |
 
-</details>
+# Media Sosial <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Earth.gif" width="30px">
 
-### Education
-
-```js
-//Example!
-arugaz.edu.corona('Indonesia')
-.then(res => console.log(res))
-.catch(err => console.log(err))
-
-arugaz.edu.translate('ar', 'Halo nama saya aruga')
-.then(res => console.log(res))
-.catch(err => console.log(err))
-```
-
-<details>
-  <summary><b>Lists of module name (type = edu)</b> (click to show)</summary>
-
-| module name | params | thing | response | description |
-| :--- | :---------- | :--- | :--- | :--- |
-| idwiki | query | any text | json | Indonesia Wikipedia |
-| enwiki | query | any text | json | English Wikipedia |
-| corona | query | country | json | Corona details by country |
-| resep | query | food | json | Food recipes |
-| translate | query, query | country id, any text | json | Translate to country language |
-
-</details>
-
-### Flaming Text
-
-```js
-//Example!
-arugaz.flaming.wroom('hello world')
-.then(res => console.log(res))
-.catch(err => console.log(err))
-
-arugaz.flaming.memo('hello world')
-.then(res => console.log(res))
-.catch(err => console.log(err))
-```
-
-<details>
-  <summary><b>Lists of module name (type = flaming)</b> (click to show)</summary>
-
-| module name | params | thing | response | description |
-| :--- | :---------- | :--- | :--- | :--- |
-| wroom | query | any text | buffer | Wroom effect |
-| text3d | query | any text | buffer | Gold text 3D Style |
-| black | query | any text | buffer | Blackbird effect |
-| water | query | any text | buffer | Text with water effect |
-| smurf | query | any text | buffer | Like a smurf |
-| memo | query | any text | buffer | Memories text gif |
-
-</details>
+#### Instagram : [`@h4cking3mpir3S`](https://www.instagram.com/h4cking3mpir3S)
+#### Kontak : [`WhatsApp`](https://wa.me/62859106999930)
+#### Donasi : [`Seikhlasnya :)`](https://saweria.co/akashiro)
+#### Creator : [`RC047`](https://Github.com/akashiro22)
