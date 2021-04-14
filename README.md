@@ -2,7 +2,7 @@
 <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Developer.gif" width="500px">
 
 ## Apikey? Chat Admin <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/happy.gif" width="30px">
-[`Kontak Saya`](https://wa.me/62895337278647?text=Bang%20Minta%20Apikey%20Kuhong-Api%20)
+[`Kontak Saya`](https://wa.me/62859106999930?text=Bang%20Minta%20Apikey%20AkaShiro-Api%20)
 Apikeynya Gratis kok gan,, tenang aja ;D
 
 ## Contoh Kode <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Medal.gif" width="30px">
@@ -14,7 +14,7 @@ $ npm install axios
 ```js
 const axios = require('axios') // Module yg dibutuhkan untuk menscrap website
 
-axios.get('https://raw.githubusercontent.com/RC047/kuhong-api/main/contoh.json').then((res) => { // Scrap web
+axios.get('https://raw.githubusercontent.com/RC047/akashiro-api/main/contoh.json').then((res) => { // Scrap web
  let random = Math.floor(Math.random() * res.data.length) // Acak objek
  let data = res.data[random] // Setelah diacak arahkan ke teks respon sesuai nama diweb
    console.log(data.result) // Ta Daa
@@ -33,7 +33,7 @@ $ npm install image-to-base64
 const imageToBase64 = require('image-to-base64') // Untuk mengubah menjadi gambar
 const axios = require('axios') // Module yg dibutuhkan untuk menscrap website
 
-axios.get('https://raw.githubusercontent.com/RC047/kuhong-api/main/contoh_gambar.json').then((res) => { // Scrap web
+axios.get('https://raw.githubusercontent.com/akashiro22/akashiro-api/main/contoh_gambar.json').then((res) => { // Scrap web
  let random = Math.floor(Math.random() * res.data.length) // Acak objek
  let data = res.data[random] // Setelah diacak arahkan ke teks respon sesuai nama diweb
   imageToBase64(data.gambar).then((result) => { // Ubah menjadi gambar
@@ -49,8 +49,8 @@ axios.get('https://raw.githubusercontent.com/RC047/kuhong-api/main/contoh_gambar
 
 | Nomor | Nama | Deskripsi | Status | Link |
 | :-: | :-----------------: | :-----------------: | :-------: | :-------: |
-| 1 | Test API Teks | Pratinjau Contoh Respon API Teks | - | [`Klik Disini`](https://raw.githubusercontent.com/RC047/kuhong-api/main/contoh.json)|
-| 2 | Test API Media | Pratinjau Contoh Respon API Media | - | [`Klik Disini`](https://raw.githubusercontent.com/RC047/kuhong-api/main/contoh_gambar.json)|
+| 1 | Test API Teks | Pratinjau Contoh Respon API Teks | - | [`Klik Disini`](https://raw.githubusercontent.com/akashiro22/akashiro-api/main/contoh.json)|
+| 2 | Test API Media | Pratinjau Contoh Respon API Media | - | [`Klik Disini`](https://raw.githubusercontent.com/akashiro22/akashiro-api/main/contoh_gambar.json)|
 | 3 | Anime | Mengirimkan Gambar Anime | Aktif  | [`Klik Disini`](https://tinyurl.com/4pk8n3ka)|
 | 4 | Asupan | Megirimkan Video Penyegar Timeline | Aktif | [`Klik Disini`](https://tinyurl.com/uzmk2ytz)|
 | 5 | Berita | Mengirimkan Informasi Berita Terkini | Aktif | [`Klik Disini`](https://tinyurl.com/3rxhkzve)|
@@ -88,8 +88,7 @@ axios.get('https://raw.githubusercontent.com/RC047/kuhong-api/main/contoh_gambar
 
 # Media Sosial <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Earth.gif" width="30px">
 
-#### YouTube : [`RC047`](https://www.youtube.com/c/RC047)
-#### Instagram : [`@rendycraft047`](https://www.instagram.com/rendycraft047)
-#### Kontak : [`WhatsApp`](https://wa.me/62895337278647)
-#### Donasi : [`Seikhlasnya :)`](https://saweria.co/RC047)
-#### Creator : [`RC047`](https://Github.com/RC047)
+#### Instagram : [`@rendycraft047`](https://www.instagram.com/h4cking3mpir3S)
+#### Kontak : [`WhatsApp`](https://wa.me/62859106999930)
+#### Donasi : [`Seikhlasnya :)`](https://saweria.co/akashiro)
+#### Creator : [`AkaShiro22`](https://Github.com/AkaShiro22)
